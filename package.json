@@ -9,5 +9,10 @@
   },
   "keywords": [],
   "author": "leonardo sousa",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "commander": "^10.0.1",
+    "sqlite": "^4.1.2"
+  }
 }

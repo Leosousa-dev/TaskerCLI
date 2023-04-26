@@ -3,7 +3,6 @@ import chalk from 'chalk';
 
 export const Db = new sqlite3.Database('tasks.db', (err) => {
    if(err) throw err;
-   console.log(chalk.greenBright('✔️ Conectado ao banco de dados SQLite.'))
  });
  Db.run(`CREATE TABLE IF NOT EXISTS tasks (
  
@@ -14,6 +13,5 @@ export const Db = new sqlite3.Database('tasks.db', (err) => {
    if (err) {
      console.error(err.message);
    }
-   console.log('Tabela criada com sucesso.');
  });
  

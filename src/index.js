@@ -16,6 +16,7 @@ program
 
 program
   .command('create <description>')
+  .alias('c')
   .action((description) => {
     if(description === undefined) return;
     CreateTask(`${description}`, 0)
@@ -32,10 +33,11 @@ program
   });
 
 program
-  .command('delete <id>')
+  .command('delete <Id>')
   .alias('dl')
   .description('delete task')
-  .action((id) => {
+  .action((Id) => {
+   let id = parseInt(Id)
     Delete(id);
   })
 program.parse(process.argv);

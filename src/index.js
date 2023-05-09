@@ -16,7 +16,7 @@ program
 
 program
   .command('create <description>')
-  .alias('c')
+  .alias('cr')
   .action((description) => {
     if(description === undefined) return;
     CreateTask(`${description}`, 0)

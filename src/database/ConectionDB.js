@@ -1,4 +1,3 @@
-import chalk from 'chalk';
 import sqlite3 from 'sqlite3'
 
 export const Db = new sqlite3.Database('tasks.db', (err) => {
@@ -13,6 +12,5 @@ export const Db = new sqlite3.Database('tasks.db', (err) => {
    if (err) {
      console.error(err.message);
    }
-   console.log(chalk.yellow.bold.underline('tudo certo aqui'))
  });
  

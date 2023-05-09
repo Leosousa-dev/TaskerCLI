@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import { Command } from "commander";
 import chalk from "chalk";
-import {Db} from './database/ConectionDB.js'
 import { CreateTask } from "./commands/create.js";
 import {ListTasks } from "./commands/list.js";
 import { Delete } from "./commands/delete.js";

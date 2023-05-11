@@ -1,3 +1,4 @@
+![texto alternativo da imagem](src/img/tumb.jpg)
 # ✔️ Tasker
 
 Este é um projeto de CLI (Interface de Linha de Comando) simples utilizando as tecnologias Node.js, SQLite, Commander.js e Chalk.

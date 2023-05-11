@@ -6,7 +6,7 @@ export function ListTasks(){
    Db.all('SELECT * FROM tasks', (err, rows) => {
       if(err) console.log(err.message)
       rows.forEach(({id, completed, description}) => {
-         console.log(`${chalk.gray(`${id}.`)} ${completed ? `${chalk.green(`✔️ ${chalk.gray(`${description}`)}`)}` : `${description}`}\n`)
+         console.log(`${chalk.gray(`${id}.`)} ${completed ? `${chalk.green(`✔️ ${chalk.gray(`${chalk.strikethrough(`${description}`) }`)}`)}` : `${description}`}\n`)
       })
    })
 }

@@ -8,7 +8,7 @@ Db.exec(`CREATE TABLE IF NOT EXISTS tasks (
   
   id            INTEGER PRIMARY KEY AUTOINCREMENT,
   description   TEXT NOT   NULL,
-  completed     INTEGER NOT NULL DEFAULT 0
+  completed     BOOLEAN NOT NULL DEFAULT FALSE
 )`, (err) => {
   if (err) {
     console.error(err.message);

@@ -44,9 +44,9 @@ program
 
 
 program
-  .command('update <Id>')
-  .alias('up')
-  .description('update tasks')
+  .command('mark <Id>')
+  .alias('mk')
+  .description('schedule task')
   .action((Id) => {
     let id = parseInt(Id)
     Update(id)

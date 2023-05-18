@@ -4,11 +4,13 @@
 Este é um projeto de CLI (Interface de Linha de Comando) simples utilizando as tecnologias Node.js, SQLite, Commander.js e Chalk.
 ## 🎯 Objetivos
 Estudar um pouco mais node js e sqlite, criando uma cli simples de uma tudo list
-## 💻️ Tecnologias utilizadas:
-- **node js**
-- **Sqlite**
-- **chalk**
-- **pnpm**
+## 💻️ Tecnologias utilizadas
+**Este projeto utiliza as seguintes tecnologias:**
+- [**node.js :**](https://nodejs.org/en) plataforma de desenvolvimento em JavaScript.
+- [**SQlite :**](https://www.sqlite.org/index.html) banco de dados relacional.
+- [**Commander.js:**](https://www.npmjs.com/package/commander) biblioteca para criação de interfaces de linha de comandoff.
+- [**Chalk:**](https://www.npmjs.com/package/chalk?activeTab=readme) biblioteca para colorir o output no console.
+
 ## Instalação
 1. Clone o repositório para a sua máquina:
 ```bash
@@ -26,7 +28,7 @@ Estudar um pouco mais node js e sqlite, criando uma cli simples de uma tudo list
 
 ### Create :
 
-O comando add adiciona um novo item ao banco de dados. Para utilizá-lo, digite:
+O comando **create / cr** adiciona um novo item ao banco de dados. Para utilizá-lo, digite:
 ```bash
  pnpm start cr "Hello word"
 ```

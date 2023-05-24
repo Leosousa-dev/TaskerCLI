@@ -8,5 +8,6 @@ export function ListTasks(){
       rows.forEach(({id, completed, description}) => {
          console.log(`${chalk.gray(`${id}.`)} ${completed ? `${chalk.green(`✔️ ${chalk.gray(`${chalk.strikethrough(`${description}`) }`)}`)}` : `${description}`}\n`)
       })
+      console.log(chalk.yellow.bold(`📜 use o comando ${chalk.underline('mark')} ou ${chalk.underline('mk')} para marca uma nova tarefa como completa.`))
    })
 }

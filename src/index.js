@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 import { Command } from "commander";
 import chalk from "chalk";
-import { CreateTask } from "./commands/create.js";
+// import { CreateTask } from "./commands/create.js";
 import {ListTasks } from "./commands/list.js";
 import { Delete } from "./commands/delete.js";
 import { Update } from "./commands/update.js";
-
+import { createTask } from "./model/taskModel.js";
 
 const program = new Command();
 
@@ -19,7 +19,7 @@ program
   .alias('cr')
   .action((description) => {
     if(description === undefined) return;
-    CreateTask(`${description}`, 0)
+    createTask(`${description}`, 0)
     console.log(chalk.green.bold('✔️ Tarefa adicionada com sucessso'))
 });
 

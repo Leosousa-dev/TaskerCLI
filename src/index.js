@@ -6,6 +6,7 @@ import {ListTasks } from "./commands/list.js";
 import { Delete } from "./commands/delete.js";
 import { Update } from "./commands/update.js";
 import { createTask } from "./model/taskModel.js";
+import { taskController } from "./controller/taskController.js";
 
 const program = new Command();
 
@@ -19,7 +20,7 @@ program
   .alias('cr')
   .action((description) => {
     if(description === undefined) return;
-    createTask(`${description}`, 0)
+    taskController.createTask(`${description}`, 0)
     console.log(chalk.green.bold('✔️ Tarefa adicionada com sucessso'))
 });
 

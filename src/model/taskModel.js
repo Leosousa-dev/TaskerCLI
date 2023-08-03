@@ -10,6 +10,6 @@ export function createTask(description, completed){
         console.log('Task created ✅ successfully!')
 
     })
-    console.log('data', description, completed)
+    // console.log('data', description, completed)
     Db.close()
 }

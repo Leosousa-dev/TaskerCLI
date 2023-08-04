@@ -44,7 +44,7 @@ program
   .description('schedule task')
   .action((Id) => {
     let id = parseInt(Id)
-    Update(id)
+    taskController.updateTask(id)
   });
 
 

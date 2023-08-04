@@ -43,5 +43,10 @@ export function deleteTask(id){
             }
         };
     });
-    console.log(id)
 };
+export function updateTask(id){
+    const sql = 'UPDATE tasks SET completed = NOT completed WHERE id = ?'
+    Db.run(sql, [id])
+    console.log(id)
+    Db.close()
+}

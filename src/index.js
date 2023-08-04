@@ -14,9 +14,7 @@ program
   .command('create <description>')
   .alias('cr')
   .action((description) => {
-    if(description === undefined) return;
-    taskController.createTask(`${description}`, 0)
-    console.log(chalk.green.bold('✔️ Tarefa adicionada com sucessso'))
+    taskController.createTask(description)
 });
 
 
@@ -33,8 +31,7 @@ program
   .alias('dl')
   .description('delete task')
   .action((Id) => {
-   let id = parseInt(Id)
-    taskController.deleteTasks(id);
+    taskController.deleteTasks(Id);
   });
 
 
@@ -43,8 +40,7 @@ program
   .alias('mk')
   .description('schedule task')
   .action((Id) => {
-    let id = parseInt(Id)
-    taskController.updateTask(id)
+    taskController.updateTask(Id)
   });
 
 

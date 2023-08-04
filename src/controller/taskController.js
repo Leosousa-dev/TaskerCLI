@@ -1,4 +1,4 @@
-import { createTask, listTasks } from "../model/taskModel.js"
+import { createTask, listTasks, deleteTask } from "../model/taskModel.js"
 
 export const taskController = {
     createTask: function(description, completed){
@@ -11,4 +11,7 @@ export const taskController = {
     listTasks: function(){
         listTasks();
     },
+    deleteTasks: function(id){
+        deleteTask(id);
+    }
 };

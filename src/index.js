@@ -1,9 +1,6 @@
 #!/usr/bin/env node
 import { Command } from "commander";
 import chalk from "chalk";
-import {ListTasks } from "./commands/list.js";
-import { Delete } from "./commands/delete.js";
-import { Update } from "./commands/update.js";
 import { taskController } from "./controller/taskController.js";
 
 const program = new Command();
@@ -37,7 +34,7 @@ program
   .description('delete task')
   .action((Id) => {
    let id = parseInt(Id)
-    Delete(id);
+    taskController.deleteTasks(id);
   });
 
 

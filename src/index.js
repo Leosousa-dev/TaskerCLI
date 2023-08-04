@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 import { Command } from "commander";
 import chalk from "chalk";
-// import { CreateTask } from "./commands/create.js";
 import {ListTasks } from "./commands/list.js";
 import { Delete } from "./commands/delete.js";
 import { Update } from "./commands/update.js";
-import { createTask } from "./model/taskModel.js";
 import { taskController } from "./controller/taskController.js";
 
 const program = new Command();
@@ -30,8 +28,7 @@ program
   .alias('ls')
   .description('list all tasks')
   .action(() => {
-    ListTasks();
-   
+    taskController.listTasks();
   });
 
 program
